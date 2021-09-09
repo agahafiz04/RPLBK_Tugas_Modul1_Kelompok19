@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <style>
+.jumbotron {
+    background-color:#F7F3E3 !important; 
+}
+</style>
+
+    <title>Kalkulator Nilai Akhir Akademik</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron myclass">
+      <h1 class="display-3">Nilai Akhir Akademik</h1>
+      <p class="lead">Tugas Mod 1 RPLBK Kelompok 19</p>
+      <hr class="my-2" />
+    </div>
+    <div class="container-fluid">
+      <form name="nilai">
+        <div class="form-group">
+          <label for="">Absen</label>
+          <input
+            type="number"
+            class="form-control"
+            name="absen"
+            id="absen"
+            placeholder="Nilai Absen"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Tugas</label>
+          <input
+            type="number"
+            class="form-control"
+            name="tugas"
+            id="tugas"
+            placeholder="Nilai Tugas"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">UTS</label>
+          <input
+            type="number"
+            class="form-control"
+            name="uts"
+            id="uts"
+            placeholder="Nilai UTS"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">UAS</label>
+          <input
+            type="number"
+            class="form-control"
+            name="uas"
+            id="uas"
+            placeholder="Nilai UAS"
+          />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="hitung()">
+          Htung
+        </button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <input type="button" class="btn btn-secondary" onclick="console.clear();" value="Reset Console" />
+        <div class="form-group">
+          <label for="">Nilai Akhir</label>
+          <input
+            type="number"
+            class="form-control"
+            name="nilai_akhir"
+            id="nilai_akhir"
+            placeholder="Nilai Akhir"
+            readonly
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="./scripts.js"></script>
+  
+</html>
